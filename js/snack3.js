@@ -1,6 +1,6 @@
 //Generatore di “nomi cognomi” casuali: 
 //prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.
-
+const result = document.getElementById('result');
 const fakeInvites = [];
 const nomi = ['ciccio', 'caio', 'sempronio'];
 const cognomi = ['rossi', 'verdi', 'neri'];
@@ -19,3 +19,4 @@ while (fakeInvites.length < 3) {
     }
     console.log(fakePerson);
 }
+result.innerHTML = fakeInvites;

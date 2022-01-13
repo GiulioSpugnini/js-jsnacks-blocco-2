@@ -15,7 +15,7 @@ div {
 }
 
 #result {
-    width: 100px;
+    max-width: 1000px;
     font-size: 50px;
     border: 1px solid white;
     border-radius: 20px;
