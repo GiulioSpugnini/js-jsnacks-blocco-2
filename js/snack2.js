@@ -1,7 +1,8 @@
 //Inserisci un numero, se è pari stampa il numero,se è dispari stampa il numero successivo
 
+const result = document.getElementById('result');
 
-
+let solution = 0;
 const userNumber = parseInt(prompt('Inserisci un numero'));
 let i = 0;
 //!VALIDATION
@@ -11,9 +12,12 @@ if (isNaN(userNumber)) {
 while (i < 1) {
     if (userNumber % 2 == 0) {
         console.log(userNumber);
+        solution = userNumber;
     } else {
         console.log(userNumber + 1);
+        solution = userNumber + 1;
     }
     i++;
 
 }
+result.innerHTML = solution;
